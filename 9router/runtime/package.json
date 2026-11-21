@@ -1,0 +1,10 @@
+{
+  "name": "9router-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "User-writable runtime deps for 9router (better-sqlite3 native binary)",
+  "dependencies": {
+    "playwright-core": "^1.65.1",
+    "sql.js": "^1.14.1"
+  }
+}
