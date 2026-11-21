@@ -1,0 +1,173 @@
+{
+  "agents": {
+    "entries": {
+      "main": {
+        "name": "main",
+        "workspace": "/Users/kei/.openclaw/workspace",
+        "agentDir": "/Users/kei/.openclaw/agents/main/agent",
+        "identity": {
+          "name": "main"
+        }
+      }
+    },
+    "defaults": {
+      "workspace": "/Users/kei/.openclaw/workspace",
+      "model": {
+        "primary": "9router/smart-auto"
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "anthropic": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "codex": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "brave": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "BSAOC7NmLhZ4niDO40W_apxHVmcRQ77"
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "migrations": {
+      "modelPolicyAllowlist": true,
+      "utilityModelSeparation": true
+    },
+    "lastTouchedVersion": "2026.11.6"
+  },
+  "wizard": {
+    "securityAcknowledgedAt": "2026-11-20T10:40:10.622Z",
+    "lastRunAt": "2026-11-20T15:00:47.296Z",
+    "lastRunVersion": "2026.11.6",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "telemetry": {
+    "enabled": true,
+    "consentedAt": "2026-11-20T10:40:18.801Z"
+  },
+  "gateway": {
+    "mode": "local",
+    "port": 18789,
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "3629e19bed56082657d8a41883619ac21854a08a1bcea833"
+    },
+    "tailscale": {
+      "mode": "off"
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "web": {
+      "search": {
+        "provider": "brave",
+        "enabled": true,
+        "openaiCodex": {}
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "accounts": {
+        "default": {
+          "groups": {
+            "*": {
+              "requireMention": true
+            }
+          },
+          "botToken": {
+            "source": "store",
+            "provider": "default",
+            "id": "CHANNEL_SETUP_C6B5559F042BCA8F7AADCDB6B3C21C6A"
+          }
+        },
+        "konten": {
+          "enabled": true,
+          "botToken": {
+            "source": "store",
+            "provider": "default",
+            "id": "CHANNEL_SETUP_E274C5337D790AB9F1D0A6C8B19E99EA"
+          }
+        }
+      }
+    }
+  },
+  "hooks": {
+    "internal": {
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "9router": {
+        "baseUrl": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk-fd4c2a89961a1424-fz91hi-99dbadf3",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "smart-auto",
+            "name": "Smart Auto",
+            "contextWindow": 128000,
+            "maxTokens": 8192,
+            "reasoning": false,
+            "compat": {
+              "supportsDeveloperRole": false,
+              "supportsReasoningEffort": false,
+              "supportsStore": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "commands": {
+    "ownerAllowFrom": [
+      "telegram:8424037371"
+    ]
+  },
+  "skills": {
+    "entries": {
+      "coding-agent": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      }
+    }
+  }
+}
