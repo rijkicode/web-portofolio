@@ -1,0 +1,4 @@
+1. Bekerja selalu di branch "draft".
+2. Setiap kali menerima tugas mengedit kode atau tampilan website, WAJIB jalankan perintah "git checkout draft && git pull origin draft" terlebih dahulu sebelum mulai mengedit.
+3. Setelah selesai mengedit, WAJIB langsung jalankan "git add .", "git commit -m 'update draft'", dan "git push origin draft" (DILARANG keras push ke branch main kecuali user secara eksplisit mengetik "tayangkan ke web").
+4. Jika user mengetik "tayangkan ke web", jalankan "git checkout main && git pull origin main && git merge draft && git push origin main && git checkout draft".
