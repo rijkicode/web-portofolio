@@ -99,20 +99,21 @@
               "requireMention": true
             }
           },
-          "botToken": {
-            "source": "store",
-            "provider": "default",
-            "id": "CHANNEL_SETUP_C6B5559F042BCA8F7AADCDB6B3C21C6A"
-          }
+          "botToken": "9269420318:AAH2mdhZSsMJofbigjapo9G9O3HuYkEB7s0"
         },
         "konten": {
-          "enabled": true,
+          "enabled": false,
           "botToken": {
             "source": "store",
             "provider": "default",
             "id": "CHANNEL_SETUP_E274C5337D790AB9F1D0A6C8B19E99EA"
           }
         }
+      },
+      "botToken": {
+        "source": "store",
+        "provider": "default",
+        "id": "CHANNEL_SETUP_2FE132ABE732BE0B310B7E56FF2C047C"
       }
     }
   },
